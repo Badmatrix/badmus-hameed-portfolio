@@ -16,7 +16,7 @@
 
 .header::before {
     content: "";
-    background-image: url('/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg');
+    background-image: url('./images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg');
     @apply bg-cover blur-sm absolute top-0 right-0 left-0 bottom-0
 }
 

@@ -605,7 +605,7 @@ video {
 
 .header::before {
   content: "";
-  background-image: url('/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg');
+  background-image: url('./images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg');
   position: absolute;
   top: 0px;
   right: 0px;
