@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Barlow:ital,wght@0,300;0,400;1,300&family=Playpen+Sans:wght@100;200;300;400;500;600&family=Quicksand:wght@300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* <-----------------general screen --------------------->*/
+* {
+    font-family: 'quicksand';
+    scroll-behavior: smooth;
+
+}
+
+.wrapper {
+    @apply w-full max-w-full text-gray-700
+}
+
+.header::before {
+    content: "";
+    background-image: url('/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg');
+    @apply bg-cover blur-sm absolute top-0 right-0 left-0 bottom-0
+}
+
+.header {
+    @apply text-gray-50 h-screen relative
+}
+
+.header .overlay {
+    @apply relative bg-black h-full bg-opacity-50
+}
+
+
+
+.header nav {
+    @apply bg-black bg-opacity-30 capitalize md:flex md:justify-between flex-1 py-2 md:py-5 md:align-middle md:items-center shadow-md md:w-full shadow-gray-500 top-0 left-0 mb-10 z-10
+}
+
+.header nav h1 {
+    @apply capitalize font-bold text-lg italic py-2 flex justify-between px-3
+}
+
+.header nav h1 .bars {
+    @apply cursor-pointer hover:text-cyan-600 text-lg transform scale-125
+}
+
+/* .header nav .top-links{
+    @apply translate-x-1
+} */
+.header nav .links {
+    @apply md:flex
+}
+
+.header nav .links li,
+.foot-contain .links li {
+    @apply md:mx-3 py-3 hover:text-gray-300 transition ease-linear duration-500
+}
+
+.header nav li {
+    @apply w-full px-3 py-2 hover:bg-black hover:bg-opacity-70 md:rounded-md hover:font-semibold hover:text-white cursor-pointer
+}
+
+
+
+
+header .head-content {
+    @apply text-center md:top-14 bg-black bg-opacity-10 md:w-1/2 mx-auto relative py-5 box-content px-3 rounded-sm
+}
+
+header .head-content .avatar {
+    @apply md:w-1/3 bg-gray-300 md:h-1/4 lg:h-1/3 md:rounded-full mx-auto my-5 md:my-3
+}
+
+header .head-content .avatar img {
+    @apply w-full h-full rounded-full grayscale
+}
+
+header .head-content .intro {
+    @apply first-letter:capitalize md:text-lg my-10 md:my-5
+}
+
+header .head-content .intro p span {
+    @apply md:text-2xl text-xl text-cyan-600 capitalize font-semibold
+}
+
+header .head-content .intro p {
+    @apply leading-5 md:tracking-wider md:leading-7
+}
+
+header .head-content .btn-intro {
+    @apply flex items-center justify-center my-3
+}
+
+header .head-content .btn-intro button {
+    @apply bg-cyan-600 rounded-md px-3 py-2 tracking-widest capitalize hover:bg-cyan-800 font-semibold
+}
+
+.body-content {
+    @apply md:py-20 px-5 border-t border-gray-800 opacity-0
+}
+
+.body-content .container {
+    @apply md:bg-gray-200 w-full md:w-11/12 md:mx-auto shadow-sm md:shadow-gray-700 rounded-md px-2 md:px-5 md:py-20 md:my-16 md:mb-20 my-20 py-10 bg-gray-100
+}
+
+.body-content .container h1 {
+    @apply text-2xl font-bold py-2 my-3 capitalize md:w-1/6 border-b-4 border-gray-700
+}
+
+.body-content .container p {
+    @apply leading-7 tracking-wider indent-4 p-3 text-lg first-letter:uppercase
+}
+
+.body-content .container p span {
+    @apply capitalize font-bold text-xl
+}
+
+.container .resume .resume-exp ul {
+    @apply list-disc px-7
+}
+
+.container .resume .resume-exp ul li {
+    @apply mb-7 md:mb-3
+}
+
+.container .resume h2 {
+    @apply font-semibold text-xl capitalize my-5 mt-5
+}
+
+.container .resume h3 {
+    @apply font-semibold text-lg
+}
+
+.resume-edu h3, .resume-exp--1 h3 {
+    @apply flex flex-wrap justify-between mx-7
+}
+
+i {
+    @apply text-2xl font-light
+}
+
+.head-content .avatar {
+    @apply w-1/3 h-1/4 rounded-full
+}
+
+.head-content .intro {
+    @apply text-sm
+}
+
+.project-contain {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5
+}
+
+.project-contain .project {
+    @apply flex bg-white my-5 rounded-l-md shadow-md text-xs col-span-1 scale-90 hover:scale-95
+}
+
+.project-contain .img-project {
+    @apply bg-white rounded-md w-1/3 lg:w-1/4
+}
+
+.project-contain .img-project img {
+    @apply w-44 h-44 lg:w-56 rounded-l-md
+}
+
+.project-contain .project p {
+    @apply lg:w-3/4 text-sm w-2/3
+}
+
+
+
+footer {
+    @apply bg-gray-900 text-gray-50 shadow-lg py-10 font-medium bottom-0 relative mt-10
+}
+
+footer .foot-contain {
+    @apply md:flex flex-wrap justify-between items-center mx-5 text-lg align-middle
+}
+
+.foot-contain h1 {
+    @apply text-center my-3 text-xs
+}
+
+.foot-contain h1 span {
+    @apply capitalize py-3 box-content
+}
+
+.foot-links {
+    @apply flex justify-evenly md:justify-between mx-5
+}
+
+.foot-links .link {
+    @apply md:mx-3 py-3 box-content
+}
+
+/* <---------------javascript added class---------------------> */
+.body__active {
+    @apply opacity-100 transition ease-in-out duration-1000
+}
+
+.nav-bar.nav-sticky {
+    @apply md:fixed bg-gray-800 bg-opacity-95
+}
+
+.link .link__active {
+    @apply border-b-2 py-2
+}
+
+.pro-list {
+    @apply list-disc px-7 capitalize font-medium text-lg
+}
